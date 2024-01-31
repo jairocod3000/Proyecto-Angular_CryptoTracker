@@ -1,0 +1,115 @@
+h1,
+h2 {
+  color: var(--yellow);
+  font-family: Gotham;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+table.allMonedas td {
+  color: white;
+  font-family: Gotham;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.2s;
+  border-radius: 1rem;
+}
+
+table.allMonedas td:hover {
+  transition: 0.2s;
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+table.allMonedas {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+td.selected {
+  color: var(--yellow) !important;
+}
+
+td.selected:hover {
+  color: rgb(255, 62, 62) !important;
+}
+
+ngb-pagination ::ng-deep ul > li:not(.active) > a {
+  background-color: var(--yellow) !important;
+  border-color: var(--yellow) !important;
+  color: var(--black) !important;
+  font-family: Gotham !important;
+}
+
+ngb-pagination ::ng-deep ul > li.active > a {
+  background-color: var(--black) !important;
+  border-color: var(--black) !important;
+  color: var(--yellow) !important;
+  font-family: Gotham !important;
+  font-weight: bolder;
+}
+
+ngb-pagination ::ng-deep ul {
+  justify-content: start;
+  margin-left: 2rem;
+}
+
+div[class~="card"] {
+  background-color: var(--black);
+  border: none;
+}
+
+main {
+  background-color: var(--black);
+}
+
+.btn-primary {
+  background-color: var(--yellow);
+  color: var(--purple);
+  border: none;
+  font-weight: bolder;
+  font-family: Gotham;
+  border: 1px solid var(--yellow);
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--black);
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+  transition: 0.2s;
+}
+
+table.monedasShowing {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+table.monedasShowing th {
+  color: var(--yellow);
+  font-family: Gotham;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  border-bottom: 1px solid white;
+}
+
+table.monedasShowing tr {
+  padding-top: 4rem;
+}
+
+i {
+  color: green;
+}
+
+span{
+  color: white;
+}

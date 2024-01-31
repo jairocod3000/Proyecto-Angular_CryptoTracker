@@ -1,0 +1,40 @@
+<main>
+    <div class="card lg-3">
+        <div class="row g-0">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <img [src]="coinData.image.large" class="img-fluid w-30" alt="Banner">
+            </div>
+          <div class="col-lg-6 ps-5">
+            <div class="d-flex justify-content-end align-items-center">
+                <a routerLink="/portfolio" id="back" class="mt-4 me-4"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{coinData.name}} <span>{{coinData.symbol}}</span></h5>
+              <p *ngIf="coinData.genesis_date" class="card-text"><small class="text-muted">Created in: {{coinData.genesis_date | date: 'dd/MM/yyyy'}}</small></p>
+              <p *ngIf="!coinData.genesis_date" class="card-text"><small class="text-muted">Creation date not available</small></p>
+              <p class="card-text mt-4 mb-4">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  See description
+                </a>
+              </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-text">
+                        <p *ngIf="coinData.description.es != ''" [innerHTML]="coinData.description.es"></p>
+                        <p *ngIf="coinData.description.es == ''" [innerHTML]="coinData.description.en"></p>
+                        <p *ngIf="coinData.description.es == '' && coinData.description.en == ''">Description not available</p>
+                    </div>
+                </div>
+                <p class="card-text mt-4 mb-5 fs-1 d-1">{{coinData.market_data.current_price.eur}} <span>eur</span></p>
+                <div>
+                  <canvasjs-chart [options]="chartOptions" [styles]="{width: '90%', height: '460px'}" (chartInstance)="getChartInstance($event)"></canvasjs-chart>
+                </div>
+                <div class="d-flex gap-5 mb-5 mt-5">
+                    <a href="{{coinData.links.homepage[0]}}" target="_blank"><i class="fa-solid fa-house"></i></a>
+                    <a href="https://twitter.com/{{coinData.links.twitter_screen_name}}" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="{{coinData.links.repos_url.github[0]}}" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</main>

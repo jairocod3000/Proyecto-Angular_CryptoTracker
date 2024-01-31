@@ -1,0 +1,47 @@
+<main>
+  <h1 class="text-center pt-5"><span>{{this.auth.userEmail.split('@')[0]}}</span> portfolio</h1>
+  <div class="card lg-3" style="max-width: 100%">
+    <div class="row g-0 justify-content-center align-items-center">
+      <div class="col-lg-2 d-flex flex-column justify-content-start align-items-start">
+        <table class="allMonedas">
+          <tr *ngFor="let singleMoneda of this.datosAPI.cryptoList | slice : (page - 1) * pageSize : page * pageSize">
+            <td (click)="selectMoneda(singleMoneda)">
+              {{ singleMoneda.name }} <i class="fa-solid fa-plus ps-2"></i>
+            </td>
+          </tr>
+        </table>
+        <ngb-pagination
+          [collectionSize]="this.datosAPI.cryptoList.length"
+          [pageSize]="pageSize"
+          [directionLinks]="false"
+          [(page)]="page"
+          class="w-100"
+        >
+        </ngb-pagination>
+      </div>
+      <div class="col-lg-10 d-flex justify-content-center align-items-center">
+        <h2 *ngIf="!cryptoData.length">No hay monedas seleccionadas</h2>
+        <table *ngIf="cryptoData.length" class="monedasShowing">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Symbol</th>
+              <th>Price (€)</th>
+              <th>Capitalization (€)</th>
+              <th>Volume (€)</th>
+              <th>Higher price (24h)</th>
+              <th>Lower price (24h)</th>
+              <th>Details</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr app-crypto-in-table *ngFor="let singleMoneda of cryptoData" [crypto]="singleMoneda" [arrayCrypto]="cryptoData">
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>

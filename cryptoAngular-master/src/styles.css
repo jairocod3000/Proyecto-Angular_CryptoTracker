@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+  box-sizing: border-box;
+
+  --black: #0C0E12;
+  --yellow: #F2BC07;
+  --purple: #191026;
+}
+
+html{
+  background-color: var(--black);
+}

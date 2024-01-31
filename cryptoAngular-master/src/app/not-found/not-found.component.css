@@ -1,0 +1,36 @@
+h1{
+    color: var(--yellow);
+    font-family: Gotham;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-family: Gotham;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+main{
+    background-color: var(--black);
+    height: 84.8vh;
+}
+
+a{
+    color: var(--yellow);
+    font-family: Gotham;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover{
+    font-size: 1.6rem;
+    transition: 0.2s;
+}

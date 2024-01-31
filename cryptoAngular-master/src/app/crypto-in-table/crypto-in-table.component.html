@@ -1,0 +1,21 @@
+<td>
+  <img
+    src="{{ crypto.image.large }}"
+    alt="{{ crypto.name }}"
+    width="50px"
+    routerLink="/coin/{{crypto.id}}"
+  />
+</td>
+<td>{{ crypto.name }}</td>
+<td>{{ crypto.symbol }}</td>
+<td>{{ crypto.market_data.current_price.eur }}</td>
+<td>{{ crypto.market_data.market_cap.eur }}</td>
+<td>{{ crypto.market_data.total_volume.eur }}</td>
+<td>{{ crypto.market_data.high_24h.eur }}</td>
+<td>{{ crypto.market_data.low_24h.eur }}</td>
+<td>
+  <i routerLink="/coin/{{crypto.id}}" class="fa-solid fa-circle-info"></i>
+</td>
+<td>
+  <i (click)="deleteCrypto()" class="fa-solid fa-x"></i>
+</td>

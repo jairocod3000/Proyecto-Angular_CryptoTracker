@@ -1,0 +1,56 @@
+.card{
+    background-color: var(--black);
+}
+
+h1{
+    color: var(--yellow);
+    font-family: Gotham;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input{
+    background-color: var(--black);
+    color: white;
+    font-family: Gotham;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.2s;
+    border-radius: 1rem;
+    border: 1px solid var(--yellow);
+}
+
+input:focus{
+    box-shadow: none;
+    border-color: var(--yellow);
+}
+
+button{
+    background-color: var(--yellow);
+    color: var(--black);
+    font-family: Gotham;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.2s;
+    border-radius: 1rem;
+    border: 1px solid var(--yellow);
+}
+
+button:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+i{
+    color: var(--yellow);
+    scale: 3;
+    transition: 0.2s;
+}
+
+i:hover{
+    scale: 4;
+    cursor: pointer;
+    transition: 0.2s;
+}

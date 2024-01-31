@@ -1,0 +1,55 @@
+.btn-primary{
+    background-color: var(--yellow);
+    color: var(--purple);
+    border: none;
+    font-weight: bolder;
+    font-family: Gotham;
+    border: 1px solid var(--yellow);
+    transition: 0.2s;
+}
+
+.btn-primary:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+    transition: 0.2s;
+}
+
+td{
+    color: white;
+    font-family: Gotham;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+i{
+    scale: 2;
+    transition: 0.2s;
+}
+
+.fa-x{
+    color: rgb(255, 62, 62);
+}
+
+.fa-circle-info{
+    color: var(--yellow);
+}
+
+i:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    scale: 2.3;
+}
+
+img:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    scale: 1.1;
+}
+
+img{
+    transition: 0.2s;
+}

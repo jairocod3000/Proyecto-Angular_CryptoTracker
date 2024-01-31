@@ -1,0 +1,94 @@
+div[class~="d-flex col-lg-6"], .card-text{
+    height: 100%;
+    color: white;
+    font-family: Gotham;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+div[class~="card"]{
+    background-color: var(--black);
+    border: none;
+}
+
+h5.card-title{
+    color: white;
+    font-size: 6rem;
+}
+
+h5.card-title span, .card-text span{
+    color: var(--yellow);
+    text-transform: uppercase;
+}
+
+h5.mini-card-title{
+    color: white;
+    font-size: 2.5rem;
+    color: var(--yellow);
+}
+
+.mini-card-text{
+    color: white;
+    font-weight: bold;
+}
+
+.fa-house, .fa-twitter, .fa-github{
+    color: var(--yellow);
+    font-size: 2rem;
+    box-shadow: 0 0 0 0.1rem var(--yellow);
+    padding: 1rem;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.fa-house:hover, .fa-twitter:hover, .fa-github:hover{
+    color: var(--black);
+    background-color: var(--yellow);
+    transition: 0.2s;
+}
+
+.fa-arrow-left{
+    color: var(--yellow);
+    font-size: 2rem;
+    padding: 1rem;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+.fa-arrow-left:hover{
+    color: var(--black);
+    background-color: var(--yellow);
+    transition: 0.2s;
+    box-shadow: 0 0 0 0.1rem var(--yellow);
+}
+
+main{
+    background-color: var(--black);
+}
+
+.btn-primary{
+    background-color: var(--yellow);
+    color: var(--purple);
+    border: none;
+    font-weight: bolder;
+    font-family: Gotham;
+    font-size: 1.3rem;
+    width: 25%;
+    border: 1px solid var(--yellow);
+}
+
+.btn-primary:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+
+input{
+    font-family: Gotham;
+}
+
+input:focus{
+    border-color: var(--yellow);
+    box-shadow: 0 0 0 0.1rem var(--yellow);
+}

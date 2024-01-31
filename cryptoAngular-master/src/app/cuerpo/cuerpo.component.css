@@ -1,0 +1,103 @@
+div[class~="d-flex col-lg-6"], .card-text{
+    height: 100%;
+    color: var(--yellow);
+    font-family: Gotham;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+div[class~="card"]{
+    background-color: var(--black);
+    border: none;
+}
+
+h5.card-title{
+    color: white;
+    font-size: 6rem;
+}
+
+h5.mini-card-title{
+    color: white;
+    font-size: 2.5rem;
+    color: var(--yellow);
+}
+
+.mini-card-text{
+    color: white;
+    font-weight: bold;
+}
+
+.fa-mobile-screen, .fa-calendar, .fa-chart-simple{
+    color: var(--yellow);
+    font-size: 6rem;
+    box-shadow: 0 0 0 0.1rem var(--yellow);
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+main{
+    background-color: var(--black);
+}
+
+.btn-primary{
+    background-color: var(--yellow);
+    color: var(--purple);
+    border: none;
+    font-weight: bolder;
+    font-family: Gotham;
+    font-size: 1.3rem;
+    width: 25%;
+    border: 1px solid var(--yellow);
+}
+
+.btn-primary:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+
+input{
+    font-family: Gotham;
+}
+
+input:focus{
+    border-color: var(--yellow);
+    box-shadow: 0 0 0 0.1rem var(--yellow);
+}
+
+h1{
+    color: var(--yellow);
+    font-family: Gotham;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3{
+    color: white;
+    font-family: Gotham;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.fa-database, .fa-lock, .fa-shield-halved{
+    color: var(--yellow);
+    font-size: 6rem;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.card-reliabe-title{
+    color: var(--yellow);
+    font-family: Gotham;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card-reliabe-text{
+    color: white;
+    font-family: Gotham;
+    font-size: 1rem;
+    font-weight: bold;
+}
